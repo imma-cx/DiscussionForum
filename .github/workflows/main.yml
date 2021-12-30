@@ -35,9 +35,9 @@ jobs:
           # Provide the Tenant for AST portal URL
           cx_tenant: cec_emea_test_emanuel_ribeiro
           # Client ID for AST portal authentication
-          cx_client_id: github-client
+          cx_client_id: ${{ secrets.CLIENT_ID }}
           # Secret key for AST portal authentication
-          cx_client_secret: f6aaf56d-43f2-4bd6-9ef7-1e3c4dac6da5
+          cx_client_secret: ${{ secrets.SECRET }}
           # Select a Checkmarx Project Name
           project_name: ${{ github.repository }}
           # Branch name
