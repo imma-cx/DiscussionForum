@@ -43,7 +43,7 @@ jobs:
           # GitHub API Token
           github_token: ${{ github.token }}
           # Additional parameters for AST scan
-          additional_params: --scantypes sast,kics,sca --file-filter !readme --report-format sarif --output-name results
+          additional_params: --scantype sast,kics,sca --file-filter !readme --report-format sarif --output-name results
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v1
         with:
