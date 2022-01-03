@@ -45,7 +45,7 @@ jobs:
           # GitHub API Token
           github_token: ${{ github.token }}
           # Additional parameters for AST scan
-          additional_params: --file-filter '!Uedit.php' --report-format sarif --output-name results
+          additional_params: --file-filter '!*\Uedit.Php' --report-format sarif --output-name results
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v1
         with:
