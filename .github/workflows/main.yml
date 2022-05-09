@@ -31,9 +31,9 @@ jobs:
         uses: Checkmarx/ast-github-action@v0.29
         with:
           # Provide the AST portal URL
-          base_uri: https://eu.ast.checkmarx.net/
+          base_uri: https://deu.ast.checkmarx.net/
           # Provide the Tenant for AST portal URL
-          cx_tenant: cec_emea_test_emanuel_ribeiro
+          cx_tenant: emanuel_ribeiro_gst
           # Client ID for AST portal authentication
           cx_client_id: ${{ secrets.CLIENT_ID }}
           # Secret key for AST portal authentication
