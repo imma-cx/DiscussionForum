@@ -5,7 +5,6 @@
 
 <?php 
 
-$ima = $_FILES['ima']['name'];
 $imup=$_FILES['ima']['tmp_name'];
 
 $path="ups/$ima";
