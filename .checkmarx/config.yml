@@ -26,3 +26,5 @@ checkmarx:
         incremental: 'false'
       kics:
         platforms: 'Terraform'
+
+
