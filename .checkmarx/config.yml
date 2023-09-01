@@ -21,10 +21,13 @@ checkmarx:
       # configure the SAST related configurations this specific project
       sast:
         # configure the SAST preset name used for this specific project
-        presetName: 'ASA Premium'
+        presetName: 'Checkmarx Default'
          # configure if this specific project will be run incrementally or will it run a full scan 
         incremental: 'false'
       kics:
         platforms: 'Terraform'
+      sca:
+        lastSastScanTime: '30'
+        filter: '!*.cpp'
 
 
